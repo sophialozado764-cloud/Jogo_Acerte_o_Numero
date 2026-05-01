@@ -70,11 +70,13 @@ class Program
                         {  
                           do{  Console.WriteLine("Digite um número de 1 a 20: "); // ->  Solicitando ao usuário o número.
                                numDigitado = int.Parse(Console.ReadLine()); // -> lendo o número.
+
                              if ( numDigitado > 20 || numDigitado < 1) // ->  condição para a mensagem aparecer.
                                 { 
                                     Console.WriteLine("Opaa número inválido, digite novamente❌ "); // -> mensagem.
                                 }
-                          }while( numDigitado > 20 || numDigitado < 1); //-> condição parao laço se iniciar ou finalizar
+                           }while( numDigitado > 20 || numDigitado < 1); //-> condição parao laço se iniciar ou finalizar
+
                             if ( numSecreto == numDigitado) // -> condição para a mensagem de acerto e fim do jogo aparecer: se numSecreto for igual numDigitado a mensagem é exibida.
                             {
                                 Console.WriteLine("PARABÉNS, VOCÊ ACERTOU 🟢!"); // -> mensagem.
